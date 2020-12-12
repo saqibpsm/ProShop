@@ -1,0 +1,14 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Muhammad Saqib",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
