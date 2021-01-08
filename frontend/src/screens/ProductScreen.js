@@ -8,7 +8,7 @@ import {
   ListGroup,
   Card,
   Button,
-  FormControl,
+  Form,
 } from 'react-bootstrap';
 import Rating from '../components/Rating';
 import { listProductDetails } from '../actions/productActions';
@@ -86,7 +86,7 @@ const ProductScreen = ({ history, match }) => {
                     <Row>
                       <Col>Qty</Col>
                       <Col>
-                        <FormControl
+                        <Form.Control
                           as='select'
                           value={qty}
                           onChange={e => setQty(e.target.value)}
@@ -96,7 +96,7 @@ const ProductScreen = ({ history, match }) => {
                               {x + 1}
                             </option>
                           ))}
-                        </FormControl>
+                        </Form.Control>
                       </Col>
                     </Row>
                   </ListGroup.Item>
