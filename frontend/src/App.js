@@ -5,6 +5,7 @@ import Header from './components/Header.js';
 import Footer from './components/Footer';
 import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
+import LoginScreen from './screens/LoginScreen';
 import CartScreen from './screens/CartScreen';
 
 const App = () => {
@@ -13,9 +14,10 @@ const App = () => {
       <Header />
       <main className='py-4'>
         <Container>
-          <Route path='/' exact component={HomeScreen} />
           <Route path='/product/:id' component={ProductScreen} />
+          <Route path='/login' component={LoginScreen} />
           <Route path='/cart/:id?' component={CartScreen} />
+          <Route path='/' exact component={HomeScreen} />
         </Container>
       </main>
       <Footer />
